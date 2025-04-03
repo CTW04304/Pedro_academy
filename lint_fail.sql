@@ -1,3 +1,4 @@
-select * from cars 
-where tires=3 
-and brand="bmw";
+SELECT column1, tires
+FROM cars
+WHERE column2=123
+AND column3= 'value' 
