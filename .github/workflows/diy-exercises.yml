@@ -17,4 +17,14 @@ jobs:
         run: echo "$GREETING $ACADEMY_TYPE Academy 9th edition, this is $DAY_OF_WEEK's second exercise!"
         env:
           ACADEMY_TYPE: Data
+  week_job:
+    runs-on: self-hosted
+    needs: greeting_job
+    env:
+      var1: asd
+      var2: qwe
+    steps:
+      - name: "Test week job"
+        run: echo "$var1 and $var2 weekly"
+
 
