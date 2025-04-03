@@ -7,7 +7,7 @@ inputs:
   requirements_path:
     description: "Folder path to the requirements.txt file"
     required: true
-    default: .
+    default: ./requirements.txt
   unit_test_path:
     description: "Folder that contains code you want to test"
     required: true
