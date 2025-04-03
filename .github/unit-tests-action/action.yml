@@ -11,7 +11,7 @@ inputs:
   unit_test_path:
     description: "Folder that contains code you want to test"
     required: true
-    default: .github/unit-tests-action
+    default: ./.github/unit-tests-action
 
 runs:
   using: "composite"
