@@ -23,6 +23,9 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install sqlfluff
+    
+    - name: Auto-Fix SQL Files
+      run: sqlfluff fix ./*.sql  # Adjust path accordingly
 
     - name: Lint SQL files
       run: |
