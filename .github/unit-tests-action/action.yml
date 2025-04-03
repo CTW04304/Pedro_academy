@@ -11,7 +11,7 @@ inputs:
   unit_test_path:
     description: "Folder that contains code you want to test"
     required: true
-    default: .
+    default: ./02_devops_fundamentals/github_actions/diy_1/unit_tests
 
 runs:
   using: "composite"
