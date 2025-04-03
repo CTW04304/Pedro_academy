@@ -28,8 +28,5 @@ jobs:
         run: echo "$var1 and $var2 weekly"
   unit_tests:
     runs-on: self-hosted
-    steps:
-    - name: unit_test
-      uses: unit-tests-action/action.yml
 
 
