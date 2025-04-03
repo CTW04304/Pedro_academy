@@ -26,11 +26,7 @@ jobs:
     steps:
       - name: "Test week job"
         run: echo "$var1 and $var2 weekly"
-  unit_tests:
-    runs-on: self-hosted
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+  
 
 
 
