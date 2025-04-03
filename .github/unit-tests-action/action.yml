@@ -7,9 +7,11 @@ inputs:
   requirements_path:
     description: "Folder path to the requirements.txt file"
     required: true
+    default: .
   unit_test_path:
     description: "Folder that contains code you want to test"
     required: true
+    default: ./unit-tests-action
 
 runs:
   using: "composite"
