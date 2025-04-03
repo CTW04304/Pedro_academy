@@ -17,7 +17,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.10'  # Specify the version you need
+        python-version: '3.10'
 
     - name: Install sqlfluff
       run: |
@@ -25,7 +25,7 @@ jobs:
         pip install sqlfluff
     
     - name: Auto-Fix SQL Files
-      run: sqlfluff fix ./*.sql  # Adjust path accordingly
+      run: sqlfluff fix ./*.sql --dialect mysql
 
     - name: Lint SQL files
       run: |
