@@ -28,5 +28,11 @@ jobs:
         run: echo "$var1 and $var2 weekly"
   unit_tests:
     runs-on: self-hosted
+    steps:
+      - name: Checkout code
+      uses: actions/checkout@v2
+
+      - name: Run second script
+      run: ./unit-tests-action/action.yml
 
 
